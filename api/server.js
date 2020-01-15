@@ -1,8 +1,10 @@
 const express = require("express");
-
+const cors = require("cors");
 const postsRouter = require("../hubs/posts"); // imports post router
 
 const server = express();
+server.use(express.json());
+server.use(cors());
 
 server.get("/", (req, res) => {
   res.send(`
