@@ -8,7 +8,7 @@ server.use(cors());
 
 server.get("/", (req, res) => {
   res.send(`
-    <p>Sanity check</p>
+    <p>HELLO THERE</p>
   `);
 });
 
